@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+ 
+</head>
+
+<body>
+  <style>
+    body{
+  display: flex;
+  flex-direction: columen;
+  align-items: center;
+  justify-content: centr;
+}
+.obshe{
+ width: 350px;
+ height: 500px;
+ box-shadow: 1px 1px 14px 1px black;
+ margin-left: 30%;
+ border-radius: 25px;
+ margin-top: 50%;
+ 
+}
+h1{
+  margin-left: 50px;
+}
+label{
+  margin-left: 50px;
+}
+button:hover{
+  background: crimson;
+  color: green;
+}
+button{
+  margin-left: 70px;
+  width: 200px;
+  margin-top: 5px;
+}
+  </style>
+<div class="obshe">
+  <h1>Ease-Peasy Form</h1>
+<form  method="POST" data-GetHup="true">
+  <div>
+    <label for="firstName">Ismngiz</label>
+    <input type="text" name="firstName" id="firstName" value="" />
+  </div>
+  <br>
+  <div>
+    <label for="email">Email</label>
+    <input type="email" name="email" id="email" value="" />
+  </div>
+  <br>
+  <div>
+      <label for="password">Parol</label>
+      <input type="text" name="password" id="password" value="" />
+    </div>
+    <br>
+  <div>
+        <label for="message">Xabaringiz</label> <br>
+        <textarea name="message" id="message" cols="30" rows="10"></textarea>
+      </div>
+      <br>
+      <div class="field">
+        <div data-netlify-recaptcha="true"></div>
+      </div>
+      <br>
+      <button type="submit">Yuborish</button>
+</form>
+</div>
+</body>
+
+</html>
